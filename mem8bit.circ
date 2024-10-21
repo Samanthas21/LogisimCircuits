@@ -5,8 +5,6 @@
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -376,5 +374,145 @@
     <wire from="(990,160)" to="(990,200)"/>
     <wire from="(990,570)" to="(1070,570)"/>
     <wire from="(990,570)" to="(990,1080)"/>
+  </circuit>
+  <circuit name="FF_D_Level1">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="FF_D_Level1"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="2.0"/>
+    <comp lib="0" loc="(1060,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Q"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(130,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(130,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(160,400)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(160,450)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(160,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(160,590)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(540,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(570,410)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(390,280)" name="NOT Gate"/>
+    <comp lib="4" loc="(310,390)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="4" loc="(320,520)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp loc="(450,150)" name="DFlipFlop"/>
+    <comp loc="(850,150)" name="DFlipFlop"/>
+    <wire from="(130,150)" to="(190,150)"/>
+    <wire from="(130,250)" to="(130,280)"/>
+    <wire from="(130,250)" to="(230,250)"/>
+    <wire from="(130,280)" to="(360,280)"/>
+    <wire from="(160,450)" to="(300,450)"/>
+    <wire from="(160,530)" to="(310,530)"/>
+    <wire from="(160,590)" to="(310,590)"/>
+    <wire from="(190,150)" to="(190,190)"/>
+    <wire from="(190,190)" to="(230,190)"/>
+    <wire from="(230,210)" to="(230,250)"/>
+    <wire from="(300,370)" to="(300,400)"/>
+    <wire from="(300,370)" to="(390,370)"/>
+    <wire from="(300,440)" to="(300,450)"/>
+    <wire from="(310,570)" to="(310,590)"/>
+    <wire from="(360,400)" to="(570,400)"/>
+    <wire from="(360,440)" to="(390,440)"/>
+    <wire from="(370,530)" to="(540,530)"/>
+    <wire from="(390,280)" to="(600,280)"/>
+    <wire from="(390,370)" to="(390,440)"/>
+    <wire from="(450,150)" to="(600,150)"/>
+    <wire from="(570,400)" to="(570,410)"/>
+    <wire from="(600,150)" to="(600,190)"/>
+    <wire from="(600,190)" to="(630,190)"/>
+    <wire from="(600,210)" to="(600,280)"/>
+    <wire from="(600,210)" to="(630,210)"/>
+    <wire from="(840,150)" to="(850,150)"/>
+    <wire from="(850,150)" to="(1060,150)"/>
+  </circuit>
+  <circuit name="Contatore">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Contatore"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="2.0"/>
+    <comp lib="0" loc="(390,180)" name="Clock"/>
+    <comp lib="0" loc="(410,420)" name="Constant"/>
+    <comp lib="0" loc="(430,130)" name="Constant"/>
+    <comp lib="0" loc="(440,290)" name="Constant"/>
+    <comp lib="0" loc="(640,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="b2"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(680,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="b1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(730,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="b0"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="4" loc="(480,120)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="4" loc="(480,280)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="4" loc="(480,410)" name="T Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <wire from="(360,370)" to="(360,460)"/>
+    <wire from="(360,370)" to="(570,370)"/>
+    <wire from="(360,460)" to="(470,460)"/>
+    <wire from="(390,180)" to="(470,180)"/>
+    <wire from="(410,420)" to="(470,420)"/>
+    <wire from="(420,250)" to="(420,330)"/>
+    <wire from="(420,250)" to="(590,250)"/>
+    <wire from="(420,330)" to="(470,330)"/>
+    <wire from="(430,130)" to="(470,130)"/>
+    <wire from="(440,290)" to="(470,290)"/>
+    <wire from="(470,170)" to="(470,180)"/>
+    <wire from="(530,130)" to="(590,130)"/>
+    <wire from="(530,290)" to="(570,290)"/>
+    <wire from="(530,420)" to="(640,420)"/>
+    <wire from="(570,290)" to="(570,370)"/>
+    <wire from="(570,290)" to="(680,290)"/>
+    <wire from="(590,130)" to="(590,250)"/>
+    <wire from="(590,130)" to="(730,130)"/>
+    <wire from="(640,100)" to="(640,420)"/>
+    <wire from="(680,100)" to="(680,290)"/>
+    <wire from="(730,100)" to="(730,130)"/>
   </circuit>
 </project>
