@@ -803,4 +803,81 @@
     <wire from="(510,60)" to="(510,120)"/>
     <wire from="(560,140)" to="(630,140)"/>
   </circuit>
+  <circuit name="GameLedDecoder">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="GameLedDecoder"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="2.0"/>
+    <comp lib="0" loc="(110,140)" name="Clock"/>
+    <comp lib="0" loc="(530,120)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="2" loc="(630,190)" name="Decoder">
+      <a name="select" val="3"/>
+    </comp>
+    <comp lib="5" loc="(810,130)" name="LED">
+      <a name="color" val="#f0ec22"/>
+    </comp>
+    <comp lib="5" loc="(810,190)" name="LED">
+      <a name="color" val="#35f0b3"/>
+    </comp>
+    <comp lib="5" loc="(810,260)" name="LED">
+      <a name="color" val="#f016ea"/>
+    </comp>
+    <comp lib="5" loc="(810,330)" name="LED">
+      <a name="color" val="#f06b00"/>
+    </comp>
+    <comp lib="5" loc="(810,400)" name="LED">
+      <a name="color" val="#005ef0"/>
+    </comp>
+    <comp lib="5" loc="(810,460)" name="LED">
+      <a name="color" val="#1df000"/>
+    </comp>
+    <comp lib="5" loc="(810,510)" name="LED">
+      <a name="color" val="#00f0ed"/>
+    </comp>
+    <comp lib="5" loc="(810,60)" name="LED"/>
+    <comp loc="(460,120)" name="CounterFlipFlop"/>
+    <wire from="(110,140)" to="(240,140)"/>
+    <wire from="(240,120)" to="(240,140)"/>
+    <wire from="(460,120)" to="(490,120)"/>
+    <wire from="(460,140)" to="(510,140)"/>
+    <wire from="(460,160)" to="(480,160)"/>
+    <wire from="(480,130)" to="(480,160)"/>
+    <wire from="(480,130)" to="(510,130)"/>
+    <wire from="(490,120)" to="(490,150)"/>
+    <wire from="(490,150)" to="(510,150)"/>
+    <wire from="(530,120)" to="(570,120)"/>
+    <wire from="(570,120)" to="(570,230)"/>
+    <wire from="(570,230)" to="(630,230)"/>
+    <wire from="(630,190)" to="(630,230)"/>
+    <wire from="(650,110)" to="(750,110)"/>
+    <wire from="(650,120)" to="(760,120)"/>
+    <wire from="(650,130)" to="(730,130)"/>
+    <wire from="(650,140)" to="(710,140)"/>
+    <wire from="(650,150)" to="(700,150)"/>
+    <wire from="(650,160)" to="(690,160)"/>
+    <wire from="(650,170)" to="(670,170)"/>
+    <wire from="(650,180)" to="(660,180)"/>
+    <wire from="(660,180)" to="(660,510)"/>
+    <wire from="(660,510)" to="(810,510)"/>
+    <wire from="(670,170)" to="(670,460)"/>
+    <wire from="(670,460)" to="(810,460)"/>
+    <wire from="(690,160)" to="(690,400)"/>
+    <wire from="(690,400)" to="(810,400)"/>
+    <wire from="(700,150)" to="(700,330)"/>
+    <wire from="(700,330)" to="(810,330)"/>
+    <wire from="(710,140)" to="(710,260)"/>
+    <wire from="(710,260)" to="(810,260)"/>
+    <wire from="(730,130)" to="(730,200)"/>
+    <wire from="(730,200)" to="(810,200)"/>
+    <wire from="(750,60)" to="(750,110)"/>
+    <wire from="(750,60)" to="(810,60)"/>
+    <wire from="(760,120)" to="(760,140)"/>
+    <wire from="(760,140)" to="(810,140)"/>
+    <wire from="(810,130)" to="(810,140)"/>
+    <wire from="(810,190)" to="(810,200)"/>
+  </circuit>
 </project>
